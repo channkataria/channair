@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chann Air Conditioner | AC Service & Repair</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#f7f9fc;color:#333}
+
+/* NAVBAR */
+nav{
+  background:#1f1f1f;
+  padding:12px 8%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap
+}
+nav img{height:55px}
+nav ul{list-style:none;display:flex;gap:20px}
+nav ul li a{color:#fff;text-decoration:none;font-weight:500}
+
+/* HERO */
+header{
+  background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+  url('https://images.unsplash.com/photo-1581091215367-59ab6b78c25c') center/cover;
+  height:80vh;
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:0 8%
+}
+header h1{font-size:42px;color:#4fc3f7}
+header p{max-width:500px;margin:15px 0}
+.btn{
+  background:#4fc3f7;color:#000;
+  padding:12px 30px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+  width:fit-content
+}
+
+/* SECTIONS */
+section{padding:60px 8%}
+.services{display:flex;gap:20px;flex-wrap:wrap}
+.card{
+  background:#fff;
+  padding:25px;
+  border-radius:10px;
+  flex:1;
+  min-width:250px;
+  box-shadow:0 5px 15px rgba(0,0,0,.1);
+  text-align:center
+}
+
+/* FORM */
+.form-box{
+  background:#fff;
+  padding:40px;
+  border-radius:10px;
+  max-width:600px;
+  margin:auto;
+  box-shadow:0 5px 15px rgba(0,0,0,.1)
+}
+.form-box h2{text-align:center;margin-bottom:20px}
+form input,form select,form textarea{
+  width:100%;
+  padding:12px;
+  margin:10px 0;
+  border-radius:5px;
+  border:1px solid #ccc
+}
+form button{
+  width:100%;
+  background:#4fc3f7;
+  border:none;
+  padding:12px;
+  font-size:16px;
+  font-weight:600;
+  border-radius:30px;
+  cursor:pointer
+}
+
+/* CONTACT */
+.contact-box{
+  background:#1f1f1f;
+  color:#fff;
+  padding:40px;
+  border-radius:10px;
+  text-align:center
+}
+iframe{
+  width:100%;
+  height:300px;
+  border-radius:10px;
+  margin-top:20px
+}
+
+/* FOOTER */
+footer{
+  background:#121212;
+  color:#4fc3f7;
+  text-align:center;
+  padding:15px
+}
+
+/* FLOAT BUTTONS */
+.whatsapp,.call-btn{
+  position:fixed;
+  right:20px;
+  padding:12px 18px;
+  border-radius:50px;
+  color:#fff;
+  font-weight:600;
+  text-decoration:none
+}
+.whatsapp{bottom:80px;background:#25D366}
+.call-btn{bottom:20px;background:#0b5ed7}
+
+/* MOBILE */
+@media(max-width:768px){
+  header h1{font-size:30px}
+  nav ul{width:100%;justify-content:center;margin-top:10px}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <img src="logo.png" alt="Chann Air Conditioner">
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#booking">Book Service</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<header id="home">
+  <h1>AC Service & Repair Experts</h1>
+  <p>Fast, reliable & affordable air conditioner services in Sirsa.</p>
+  <a href="#booking" class="btn">Book Online</a>
+</header>
+
+<!-- SERVICES -->
+<section id="services">
+  <h2 style="text-align:center">Our Services</h2>
+  <div class="services">
+    <div class="card">AC Repairing</div>
+    <div class="card">AC Servicing</div>
+    <div class="card">AC Installation</div>
+    <div class="card">Gas Refilling</div>
+  </div>
+</section>
+
+<!-- BOOKING FORM (EMAIL) -->
+<section id="booking">
+  <div class="form-box">
+    <h2>Book AC Service</h2>
+
+    <form action="mailto:channairconditioner@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="Name" placeholder="Your Name" required>
+      <input type="tel" name="Mobile" placeholder="Mobile Number" required>
+      <input type="text" name="Address" placeholder="Your Address" required>
+
+      <select name="Service" required>
+        <option value="">Select Service</option>
+        <option>AC Repairing</option>
+        <option>AC Servicing</option>
+        <option>AC Installation</option>
+        <option>Gas Refilling</option>
+      </select>
+
+      <textarea name="Message" rows="4" placeholder="Additional Details"></textarea>
+
+      <button type="submit">Send Booking</button>
+    </form>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-box">
+    <h2>Contact Us</h2>
+    <p>📞 <strong>8603600009</strong></p>
+    <p>📧 jasskataria3@gmail.com</p>
+    <p>📍 <strong>New RSD Market, Shop No.21,<br>
+       Near Arya Girls School, Sirsa</strong></p>
+
+    <iframe 
+      src="https://www.google.com/maps?q=New+RSD+Market+Sirsa&output=embed">
+    </iframe>
+  </div>
+</section>
+
+<!-- FLOATING BUTTONS -->
+<a class="whatsapp" href="https://wa.me/918603600009" target="_blank">💬 WhatsApp</a>
+<a class="call-btn" href="tel:8603600009">📞 Call Now</a>
+
+<footer>
+  © 2025 Chann Air Conditioner | All Rights Reserved
+</footer>
+
+</body>
+</html>
