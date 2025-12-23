@@ -1,2 +1,2 @@
 # channair
-it ia a air conditioner service website
+it is a air conditioner service website
